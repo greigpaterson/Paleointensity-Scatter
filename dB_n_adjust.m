@@ -11,6 +11,7 @@ function [dBn]=dB_n_adjust(m, s, n, alpha)
 %       m - vector of mean values
 %       s - vector of standard deviations
 %       n - vector of the number of specimens
+%       alpha - confidence level for adjustment
 %
 % Output:
 %       dBn - the adjusted site scatter as a % of the mean
@@ -32,7 +33,7 @@ if ~isequal(size(m), size(s), size(n))
 end
 
 if nargin < 4
-    alpha=0.05;
+    alpha=0.95;
 end
 
 %% Main function
