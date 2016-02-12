@@ -33,7 +33,7 @@ if ~isequal(size(m), size(s), size(n))
 end
 
 if nargin < 4
-    alpha=0.95;
+    alpha=0.05;
 end
 
 %% Main function
